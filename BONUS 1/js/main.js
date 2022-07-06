@@ -4,14 +4,11 @@ const numPrint = document.getElementById('numPrint');
     interactive.addEventListener ('click',
     function() {
 
-        let i = (numPrint.value);
-        console.log(i);
+        let ciao = parseInt((numPrint.value));
 
-    });
+        const cont_in = document.getElementById('container');
 
-const cont_in = document.getElementById('container');
-
-    for (let i=1; i<=(1+numPrint.value); i++) {
+    for (let i=1; i <=ciao; i++) {
         
         if (i%15 == 0) {
             cont_in.innerHTML += ('<div class="box" style="background-color:#F53364">' + 'fizzbuzz' + '</div>');
@@ -35,6 +32,8 @@ const cont_in = document.getElementById('container');
         }
         console.log(i);
     }
+        
+    });
 
     const containerPlus = document.getElementById('container-plus');
     const NuovoElemento = document.createElement('section');
@@ -42,12 +41,5 @@ const cont_in = document.getElementById('container');
     
     
     containerPlus.append(NuovoElemento);
-    NuovoElemento.append('That is' + cont_in);
     NuovoElemento.append(`That is${NuovoElemento}`);
-
-
-
-
-
-
 

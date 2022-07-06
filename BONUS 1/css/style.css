@@ -30,6 +30,12 @@ body {
     margin: 20px;
 }
 
+#frm_int {
+
+    display: flex;
+    justify-content: center;
+}
+
 .box {
 
     width: 150px;
