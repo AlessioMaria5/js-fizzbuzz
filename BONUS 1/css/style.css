@@ -59,3 +59,23 @@ h1 {
     padding: 20px;
     font-size: 80px;
 }
+
+.box-n {
+
+    background-color:#007EA8;
+}
+
+.box-fizz {
+
+    background-color:#00D396;
+}
+
+.box-buzz {
+
+    background-color:#FFCA5D;
+}
+
+.box-fizzbuzz {
+
+    background-color:#F53364;
+}

@@ -11,37 +11,32 @@ const numPrint = document.getElementById('numPrint');
     for (let i=1; i <=ciao; i++) {
         
         if (i%15 == 0) {
-            cont_in.innerHTML += ('<div class="box" style="background-color:#F53364">' + 'fizzbuzz' + '</div>');
-            
+            cont_in.innerHTML += ('<div class="box box-fizzbuzz">' + 'fizzbuzz' + '</div>');     
         }
 
         else if (i%5 == 0) {
-            cont_in.innerHTML += ('<div class="box" style="background-color:#FFCA5D">' + 'Buzz' + '</div>');
-           
+            cont_in.innerHTML += ('<div class="box box-buzz">' + 'Buzz' + '</div>');
         }
 
         else if (i%3 == 0) {
-            cont_in.innerHTML += ('<div class="box" style="background-color:#00D396">' + 'Fizz' + '</div>');
-            
+            cont_in.innerHTML += ('<div class="box box-fizz">' + 'Fizz' + '</div>');
         }
-
 
         else {
-            cont_in.innerHTML += ('<div class="box" style="background-color:#007EA8">' + i + '</div>');
-            
-           
+            cont_in.innerHTML += ('<div class="box box-n">' + i + '</div>');
         }
-        
         console.log(i);
     }
-        
+
     });
 
     const containerPlus = document.getElementById('container-plus');
-    const NuovoElemento = document.createElement('section');
+
+    let divBox = document.createElement('div');
+    containerPlus.append(divBox);
+    divBox.innerHTML += ('<p class= "box-n" > Questo è un Numero </p>');
+    divBox.innerHTML += ('<p class= "box-fizz" > Questo è un FIZZ </p>');
+    divBox.innerHTML += ('<p class= "box-buzz" > Questo è un BUZZ </p>'); 
+    divBox.innerHTML += ('<p class= "box-fizzbuzz" > Questo è un FIZZBUZZ </p>'); 
     
-    
-    
-    containerPlus.append(NuovoElemento);
-    NuovoElemento.append(`That is${NuovoElemento}`);
 
