@@ -28,8 +28,10 @@ const numPrint = document.getElementById('numPrint');
 
         else {
             cont_in.innerHTML += ('<div class="box" style="background-color:#007EA8">' + i + '</div>');
+            
            
         }
+        
         console.log(i);
     }
         
