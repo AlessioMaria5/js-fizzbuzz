@@ -1,6 +1,7 @@
 const interactive = document.getElementById('btn');
 const numPrint = document.getElementById('numPrint');
 
+
     interactive.addEventListener ('click',
     function() {
 
